@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import FavColor from './UseStateComponent';
+import Car from './MultipleStateHooks'
+import Timer from './UseEffectHool'
+import { Component1, Component2, Component3, Component4, Component5 } from './UseContextHook';
+import UseRefHook from './UseRefHook';
+// import ParentComponent from './CreateContext'
+import { MyProvider, ChildComponent } from './CreateContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Hooks</h2>
+      <FavColor/>
+      <Car/>
+      <Timer/>
+      <Component1/>
+      <Component2/>
+      <Component3/>
+      <Component4/>
+      <Component5/>
+      {/* <ParentComponent/> */}
+      <MyProvider>
+      <ChildComponent />
+      </MyProvider>
+      <UseRefHook/>
+
     </div>
   );
 }
