@@ -8,6 +8,7 @@ import { Component1, Component2, Component3, Component4, Component5 } from './Us
 import UseRefHook from './UseRefHook';
 // import ParentComponent from './CreateContext'
 import { MyProvider, ChildComponent } from './CreateContext';
+import UseMemo from './UseMemo';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <ChildComponent />
       </MyProvider>
       <UseRefHook/>
+      <UseMemo/>
 
     </div>
   );
